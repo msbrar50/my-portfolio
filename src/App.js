@@ -6,12 +6,16 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
 const App = () => {
   return (
-    <Router>
+    <Router basename="/my-portfolio">
       <Navbar />
       <div className="container mx-auto p-4">
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
