@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { Container, Row, Col, Button } from "react-bootstrap";
+
 
 const About = () => {
   useEffect(() => {
@@ -63,6 +65,28 @@ const About = () => {
           </div>
         </div>
       </div>
+
+        {/* Contact Section */}
+       
+        <Row className="mt-5 text-center">
+          <Col>
+            <h2 className="fw-bold text-dark">Let's Connect!</h2>
+            <p className="text-muted">Find me on:</p>
+            <div className="d-flex justify-content-center gap-4 flex-wrap">
+              <a href="https://github.com/msbrar50" target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-github text-dark display-5"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/manpreet-singh-7a1095326/" target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-linkedin text-primary display-5"></i>
+              </a>
+            </div>
+
+            <Button variant="primary" size="lg" className="mt-4 shadow">
+              Thank you for viewing my portfolio.
+            </Button>
+          </Col>
+        </Row>
+       
     </div>
   );
 };

@@ -1,95 +1,66 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
 
-
 const Home = () => {
-
-  const [modalShow, setModalShow] = useState(false);
   return (
-    <Container fluid className="bg-light min-vh-100 d-flex flex-column justify-content-center align-items-center">
+
+    <div className="water-effect">
+    <Container fluid className="animated-bg min-vh-100 d-flex flex-column justify-content-center align-items-center py-5 px-3">
       {/* Hero Section */}
       <Fade cascade duration={1200}>
         <Row className="text-center">
           <Col>
-            <h1 className="display-4 fw-bold text-primary">Hi, I'm Manpreet Singh 👋</h1>
-            <p className="lead text-muted">Professional Web & App Developer | React | PHP (Laraval) | Android | Flutter</p>
-           
+          <h1 className="display-6 fw-bold text-white bg-dark p-3 rounded code-style">
+  ➜ ~ Hello, I'm <span className="text-success">Manpreet Singh</span> 👨‍💻
+</h1>
+
+
+<div className="game-text-wrapper">
+  <p className="game-text">
+  🚀 Professional Web & App Developer <br />
+  ⚛️ React | PHP | Laravel | Android | Flutter 
+</p></div>
+
           </Col>
         </Row>
       </Fade>
 
-      {/* Technologies Section */}
+      {/* Tech Stack Section */}
       <Fade direction="up" duration={1000} delay={500}>
-      <Row className="mt-5">
-        <Col className="text-center">
-          <h2 className="fw-bold text-dark">Tech Stack</h2>
-          <div className="d-flex justify-content-center gap-5 mt-3">
-            {/* HTML */}
-            <div className="tech-icon">
-              <i className="bi bi-file-earmark-code text-danger display-4" title="HTML"></i>
-              <p className="mt-2">HTML</p>
+        <Row className="mt-5">
+          <Col className="text-center">
+            <h2 className="fw-bold text-dark mb-4">Tech Stack</h2>
+            <div className="d-flex flex-wrap justify-content-center gap-4">
+              {[
+                { icon: "file-earmark-code", color: "text-danger", label: "HTML" },
+                { icon: "braces", color: "text-warning", label: "JavaScript" },
+                { icon: "file-earmark-text", color: "text-info", label: "PHP" },
+                { icon: "cpu", color: "text-danger", label: "Laravel" },
+                { icon: "patch-check", color: "text-success", label: "Python" },
+                { icon: "database", color: "text-primary", label: "MySQL" },
+                { icon: "android2", color: "text-success", label: "Android" },
+                { icon: "braces", color: "text-info", label: "Flutter" },
+              ].map(({ icon, color, label }) => (
+                <div key={label} className="text-center px-3">
+                  <i className={`bi bi-${icon} ${color} display-5`}></i>
+                  <p className="mt-2 mb-0">{label}</p>
+                </div>
+              ))}
             </div>
-
-            
-
-            {/* JavaScript */}
-            <div className="tech-icon">
-              <i className="bi bi-braces text-warning display-4" title="JavaScript"></i>
-              <p className="mt-2">JavaScript</p>
-            </div>
-
-            {/* PHP */}
-            <div className="tech-icon">
-              <i className="bi bi-file-earmark-text text-info display-4" title="PHP"></i>
-              <p className="mt-2">PHP</p>
-            </div>
-
-            {/* Laravel */}
-            <div className="tech-icon">
-              <i className="bi bi-cpu text-danger display-4" title="Laravel"></i>
-              <p className="mt-2">Laravel</p>
-            </div>
-
-            {/* Python */}
-            <div className="tech-icon">
-              <i className="bi bi-patch-check text-success display-4" title="Python"></i>
-              <p className="mt-2">Python</p>
-            </div>
-
-            {/* MySQL */}
-            <div className="tech-icon">
-              <i className="bi bi-database text-primary display-4" title="MySQL"></i>
-              <p className="mt-2">MySQL</p>
-            </div>
-
-
-            
-            {/* Android */}
-            <div className="tech-icon">
-              <i className="bi bi-android2 text-success display-4" title="Android"></i>
-              <p className="mt-2">Android</p>
-            </div>
-
-            {/* Flutter */}
-            <div className="tech-icon">
-              <i className="bi bi-braces text-info display-4" title="Flutter"></i>
-              <p className="mt-2">Flutter</p>
-            </div>
-          </div>
-        </Col>
-      </Row>
-    </Fade>
+          </Col>
+        </Row>
+      </Fade>
 
       {/* Contact Section */}
-      <Fade direction="up" duration={1000} delay={700}>
+      <Fade direction="up" duration={1000} delay={300}>
         <Row className="mt-5 text-center">
           <Col>
             <h2 className="fw-bold text-dark">Let's Connect!</h2>
             <p className="text-muted">Find me on:</p>
-            <div className="d-flex justify-content-center gap-4">
+            <div className="d-flex justify-content-center gap-4 flex-wrap">
               <a href="https://github.com/msbrar50" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-github text-dark display-5"></i>
               </a>
@@ -98,18 +69,17 @@ const Home = () => {
               </a>
             </div>
 
-
-            <Button variant="primary" size="lg" className="mt-3 shadow-lg" >
-            Thank you for viewing my portfolio.
+            <Button variant="primary" size="lg" className="mt-4 shadow">
+              Thank you for viewing my portfolio.
             </Button>
           </Col>
-
         </Row>
       </Fade>
 
-      
 
-    </Container>
+
+      
+    </Container></div>
   );
 };
 

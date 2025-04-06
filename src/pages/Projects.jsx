@@ -16,8 +16,8 @@ const projectList = [
     title: "Bookshop -E-commerce Platform",
     description: "User can see and buy Fiction and Non Fiction Books",
     technologies: ["MERN Stack", "Node JS", "ReactJS"],
-    date: "January 2025",
-    images: ["/images/ecom1.png", "/images/ecom2.png", "/images/ecom3.png"],
+    date: "April 2024",
+    images: ["https://placehold.co/1080x720?text=Manpreet+Singh"],
   },
   {
     title: "Banking System",
@@ -25,6 +25,29 @@ const projectList = [
     technologies: ["Python", "Tkinter Library"],
     date: "December 2023",
     images: ["images/bank_1.png", "images/bank_2.png", "images/bank_3.png"],
+  },
+
+  {
+    title: "Voywellness",
+    description: "User can book doctor appointments, view doctor profiles , check reports and admin can handle everything",
+    technologies: ["Flutter", "REST APIS","Google API"],
+    date: "Feb 2023",
+    images: ["https://placehold.co/1080x720?text=Manpreet+Singh"],
+  },
+
+  {
+    title: "NCHostal - Android App",
+    description: "Android application, where student can mark their attendance when enter the and leave the hostal. Hostal admin can register student records, check attendance and update notice board in app. ",
+    technologies: ["Kotlin", "Realtime firebase database","Google API","QR Code integration"],
+    date: "August 2022",
+    images: ["https://placehold.co/1080x720?text=Manpreet+Singh"],
+  },
+  {
+    title: "Smart Placement Assistant - Android app",
+    description: "Student can register online placement portal of college/university. where they can check latest job opportunities and apply instantly. Admin can manage student records and post jobs. ",
+    technologies: ["Flutter", "Cloud Fireabse","Cloud Storage"],
+    date: "July 2022",
+    images: ["https://placehold.co/1080x720?text=Manpreet+Singh"],
   },
 ];
 
