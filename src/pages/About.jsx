@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import {  Row, Col, Button } from "react-bootstrap";
 
 
 const About = () => {
@@ -76,7 +76,7 @@ const About = () => {
               <a href="https://github.com/msbrar50" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-github text-dark display-5"></i>
               </a>
-              <a href="https://www.linkedin.com/in/manpreet-singh-7a1095326/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/manpreet-singh-dev/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin text-primary display-5"></i>
               </a>
             </div>
